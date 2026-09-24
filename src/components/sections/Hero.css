@@ -13,6 +13,7 @@
     z-index: 4;
     pointer-events: none;
 }
+
 .left-shadow {
     position: absolute;
     bottom: 9.5%;
@@ -24,6 +25,7 @@
     z-index: 5;
     pointer-events: none;
 }
+
 .right-shadow {
     position: absolute;
     bottom: 9.5%;
@@ -45,6 +47,7 @@
         height: 16px;
         filter: blur(8px);
     }
+
     .left-shadow,
     .right-shadow {
         height: 13px;
@@ -61,6 +64,7 @@
         height: 12px;
         filter: blur(6px);
     }
+
     .left-shadow,
     .right-shadow {
         height: 10px;
@@ -76,6 +80,7 @@
         height: 8px;
         filter: blur(4px);
     }
+
     .left-shadow,
     .right-shadow {
         height: 7px;

@@ -28,10 +28,42 @@ const Hero = () => {
                     <img src={imgFloor3} alt="Floor" className="w-full h-full object-cover opacity-90" />
                 </div>
 
+
+
+                {/* النص على الحائط (اليسار) */}
+                <div className="absolute z-20 left-[10%] bottom-[45%] flex flex-col items-start gap-4 pointer-events-none">
+                    <p className="text-[#8e7e6e] text-[15px] font-medium leading-relaxed tracking-wide">
+                        Modern doors for <br /> smarter workspaces.
+                    </p>
+                    <div className="w-10 h-[2px] bg-[#8e7e6e]"></div>
+                </div>
+
+                {/* النص وقائمة التصنيفات على الحائط (اليمين) */}
+                <div className="absolute z-20 right-[15%] bottom-[35%] flex flex-col items-start gap-4 pointer-events-none">
+                    <div className="w-10 h-[2px] bg-[#8e7e6e]"></div>
+                    <ul className="text-[#8e7e6e] text-[12px] font-bold leading-loose tracking-[0.2em] uppercase list-none">
+                        <li>Office</li>
+                        <li>Healthcare</li>
+                        <li>Education</li>
+                        <li>Commercial</li>
+                    </ul>
+                </div>
+
+                {/* سهم السكرول (الأسفل) */}
+                <div className="absolute z-30 bottom-[6%] left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 pointer-events-none">
+                    <span className="text-[#8e7e6e] text-[11px] font-bold tracking-[0.2em] uppercase">
+                        Scroll to explore
+                    </span>
+                    <svg width="14" height="30" viewBox="0 0 14 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 0L7 28M7 28L1 22M7 28L13 22" stroke="#8e7e6e" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                </div>
+                {/* ========================================= */}
+
                 {/* 3. الزرعة (imgLilyInPot1) */}
-                <img 
-                    src={imgLilyInPot1} 
-                    alt="Lily in pot" 
+                <img
+                    src={imgLilyInPot1}
+                    alt="Lily in pot"
                     className="absolute z-20 bottom-[30%] left-[25%] w-[200px] object-contain drop-shadow-[25px_15px_15px_rgba(0,0,0,0.3)] pointer-events-none"
                 />
 
