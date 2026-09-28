@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       {/* <Home /> */}
-      <Contacts />
+      <Home />
       {/* <AboutUs /> */}
     </>
   );
