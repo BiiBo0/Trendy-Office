@@ -41,7 +41,7 @@ const ContactSection = () => {
               </label>
               <input 
                 type="text" 
-                placeholder="e.g. Tarek Mansour" 
+                placeholder="e.g. Basel Mohamed" 
                 className="border border-[#e2e2e2] p-3 text-[14px] text-black placeholder:text-[#c4c7c7] focus:outline-none focus:border-black transition-colors rounded-[3px]"
                 required
               />
@@ -65,7 +65,7 @@ const ContactSection = () => {
             </label>
             <input 
               type="email" 
-              placeholder="e.g. tarek@company.com" 
+              placeholder="e.g. basel_mohamed@company.com" 
               className="border border-[#e2e2e2] p-3 text-[14px] text-black placeholder:text-[#c4c7c7] focus:outline-none focus:border-black transition-colors rounded-[3px]"
               required
             />
