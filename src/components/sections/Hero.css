@@ -42,7 +42,7 @@
 /* Tablet  (max-width: 1024px)   */
 /* md breakpoint  ≤ 1024px       */
 /* ============================= */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .center-shadow {
         height: 16px;
         filter: blur(8px);
@@ -53,13 +53,13 @@
         height: 13px;
         filter: blur(5px);
     }
-}
+} */
 
 /* ============================== */
 /* Small tablet (max-width: 768px)*/
 /* sm breakpoint  ≤ 768px         */
 /* ============================== */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .center-shadow {
         height: 12px;
         filter: blur(6px);
@@ -70,12 +70,12 @@
         height: 10px;
         filter: blur(4px);
     }
-}
+} */
 
 /* ============================= */
 /* Mobile  (max-width: 480px)    */
 /* ============================= */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     .center-shadow {
         height: 8px;
         filter: blur(4px);
@@ -86,4 +86,4 @@
         height: 7px;
         filter: blur(3px);
     }
-}
+} */

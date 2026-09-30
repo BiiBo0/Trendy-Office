@@ -1,12 +1,11 @@
 import React from 'react';
 
-// استيراد صورة الخريطة من التصميم (افترض اسمها imgMap.png)
 import imgMap from '../../assets/imgMap.png'; 
 
 const ContactLocation = () => {
   return (
     <section className="w-full bg-white py-24 font-['Inter']">
-      <div className="max-w-[1512px] mx-auto px-6 md:px-16 lg:px-[120px] flex flex-col gap-12">
+      <div className="max-w-[1512px] mx-auto px-4 md:px-16 lg:px-[50px] flex flex-col gap-12">
         
         {/* الجزء العلوي: العنوان وزرار الخريطة */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
@@ -26,7 +25,12 @@ const ContactLocation = () => {
                 New Cairo, Cairo, Egypt
               </span>
             </div>
-            <a href="#" className="border border-gray-300 px-4 py-2 flex items-center gap-2 hover:bg-gray-50 transition-colors">
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=29°58'56.6%22N+31°19'15.9%22E" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="border border-gray-300 px-4 py-2 flex items-center gap-2 hover:bg-gray-50 transition-colors cursor-pointer"
+            >
               <span className="text-[10px] font-bold text-black uppercase tracking-[1px]">
                 View on Map
               </span>
@@ -51,10 +55,9 @@ const ContactLocation = () => {
               Coordinates
             </p>
             <p className="text-[14px] font-bold text-black tracking-wide">
-              30°01'44.2"N 31°29'38.6"E
-            </p>
+              29°58'56.6"N 31°19'15.9"E            </p>
             <p className="text-[11px] text-gray-500 mt-1">
-              Fifth Settlement • Commercial Sector 1
+              Zahraa El Maadi • Commercial Area
             </p>
           </div>
 
@@ -66,7 +69,7 @@ const ContactLocation = () => {
                <div className="w-1.5 h-1.5 bg-red-500"></div>
                <div className="flex flex-col">
                   <span className="text-[9px] font-bold tracking-[1px] uppercase leading-none">Trendy Office HQ</span>
-                  <span className="text-[8px] text-gray-400 leading-none mt-1">Plot 42, Floor 3 • Showroom</span>
+                  <span className="text-[8px] text-gray-400 leading-none mt-1">Zahraa El Maadi • Showroom</span>
                </div>
             </div>
 

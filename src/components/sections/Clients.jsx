@@ -61,10 +61,9 @@ const Clients = () => {
                                     transition-all
                                     duration-300
                                     cursor-pointer
-                                    ${
-                                        activeSection === index
-                                            ? "w-6 bg-blue-600"
-                                            : "w-2 bg-gray-300 hover:bg-gray-400"
+                                    ${activeSection === index
+                                        ? "w-6 bg-blue-600"
+                                        : "w-2 bg-gray-300 hover:bg-gray-400"
                                     }
                                 `}
                             />
@@ -186,10 +185,9 @@ const Clients = () => {
                                             duration-300
                                             group-hover:scale-105
 
-                                            ${
-                                                client.lightLogo
-                                                    ? "brightness-0"
-                                                    : ""
+                                            ${client.lightLogo
+                                                ? "brightness-0"
+                                                : ""
                                             }
                                         `}
                                     />

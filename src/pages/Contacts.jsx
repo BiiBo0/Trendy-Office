@@ -4,7 +4,7 @@ import Footer from '../components/layout/Footer';
 import ContactHero from '../components/sections/ContactHero';
 import ContactFormSection from '../components/sections/ContactForm';
 import ContactLocation from '../components/sections/Location';
-// import ContactCTA from '../components/sections/ContactCTA';
+import ContactCTA from '../components/sections/CTA';
 
 const Contact = () => {
   return (
@@ -18,7 +18,7 @@ const Contact = () => {
         <ContactHero />
         <ContactFormSection />
         <ContactLocation />
-        {/* <ContactCTA /> */}
+        <ContactCTA />
       </main>
 
       <Footer />

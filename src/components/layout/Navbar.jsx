@@ -32,15 +32,22 @@ const Navbar = () => {
             <nav className="hidden lg:flex items-center lg:gap-6 xl:gap-10 font-medium text-gray-600 text-[14px] xl:text-[15px]">
                 <a href="#" className="text-[#6fa8dc] transition">Home</a>
                 <a href="#" className="hover:text-black transition">About Us</a>
-                <a href="#" className="hover:text-black transition">Projects</a>
-                <a href="#" className="hover:text-black transition">Product</a>
                 <a href="#" className="hover:text-black transition">Contact</a>
             </nav>
 
             {/* زر الديسكتوب (يظهر فقط في الشاشات الكبيرة) */}
-            <button className="hidden lg:block border border-gray-700 text-[#6fa8dc] font-medium px-5 xl:px-6 py-2 rounded-sm hover:bg-gray-50 transition duration-300 cursor-pointer whitespace-nowrap">
-                Start a Project
-            </button>
+{/* Start a Project Button (WhatsApp) */}
+<a 
+  href="https://wa.me/201002662603?text=Hello%20Trendy%20Office,%20I%20would%20like%20to%20discuss%20starting%20a%20new%20project." 
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hidden lg:flex items-center justify-center gap-2 border rounded border-black px-6 py-2.5 text-[13px] font-bold uppercase tracking-[1px] text-black hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+  </svg>
+  Start a Project
+</a>
 
             {/* أيقونة الهامبرجر (تظهر في الموبايل والتابلت حتى 1023px) */}
             <button 
@@ -58,12 +65,19 @@ const Navbar = () => {
             <div className={`fixed top-0 right-0 h-screen w-[75%] sm:w-[60%] md:w-[40%] bg-white shadow-2xl transform transition-transform duration-300 ease-in-out flex flex-col pt-24 px-8 gap-6 z-40 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                 <a href="#" className="text-[#6fa8dc] text-base md:text-lg font-medium border-b pb-2">Home</a>
                 <a href="#" className="text-gray-600 text-base md:text-lg font-medium border-b pb-2">About Us</a>
-                <a href="#" className="text-gray-600 text-base md:text-lg font-medium border-b pb-2">Projects</a>
-                <a href="#" className="text-gray-600 text-base md:text-lg font-medium border-b pb-2">Product</a>
                 <a href="#" className="text-gray-600 text-base md:text-lg font-medium border-b pb-2">Contact</a>
-                <button className="border border-gray-700 text-[#6fa8dc] font-medium px-6 py-3 mt-4 rounded-sm hover:bg-gray-50 transition duration-300">
-                    Start a Project
-                </button>
+                <a 
+                  href="https://wa.me/201002662603?text=Hello%20Trendy%20Office,%20I%20would%20like%20to%20discuss%20starting%20a%20new%20project." 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Chat with us on WhatsApp"
+                  className="flex items-center justify-center gap-2 w-full lg:w-auto border rounded border-black px-6 py-2.5 text-[13px] font-bold uppercase tracking-[1px] text-black hover:bg-black hover:text-white transition-colors duration-300 cursor-pointer"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                  </svg>
+                  Start a Project
+                </a>
             </div>
             
             {/* خلفية معتمة (Overlay) عند فتح القائمة */}
