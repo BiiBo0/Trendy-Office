@@ -50,7 +50,7 @@ const Details = () => {
                 <div className="flex flex-col gap-6 order-1 lg:order-none lg:-mt-32">
                     <h2 className="font-semibold text-[#191919] text-[40px] lg:text-[48px] leading-[1.1]">
                         From material <br />
-                        <span className="text-[#0c7deb]">to</span> detail.
+                        <span className="text-[#C9362B]">to</span> detail.
                     </h2>
                     
                     <p className="font-normal text-[18px] lg:text-[22px] text-black leading-relaxed max-w-[320px]">
