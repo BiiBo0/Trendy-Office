@@ -7,9 +7,9 @@ const About = () => {
   return (
     <div className="bg-white min-h-screen flex flex-col relative w-full font-['Inter']">
       
-      <Navbar />
+    
 
-      <main className="flex-1 w-full pt-[90px]">
+      <main className="flex-1 w-full ">
         {/* سكشن الـ Hero الخاص بصفحة من نحن */}
         <AboutHero />
         
@@ -17,7 +17,7 @@ const About = () => {
         {/* <WhyChooseUs /> */}
       </main>
 
-      <Footer />
+     
     </div>
   );
 };

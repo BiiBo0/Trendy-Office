@@ -9,7 +9,7 @@ import ContactCTA from '../components/sections/CTA';
 const Contact = () => {
   return (
     <div className="font-sans text-gray-900 bg-[#f9f9f9] min-h-screen flex flex-col">
-      <Navbar />
+      
       
       {/* مساحة فاضية عشان الـ Navbar */}
       <div className="pt-[90px] bg-white"></div> 
@@ -21,7 +21,7 @@ const Contact = () => {
         <ContactCTA />
       </main>
 
-      <Footer />
+      
     </div>
   );
 };

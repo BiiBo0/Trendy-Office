@@ -22,7 +22,8 @@ const ContactLocation = () => {
             <div className="bg-gray-100 px-4 py-2 flex items-center gap-2">
               <div className="w-1.5 h-1.5 bg-red-500 rounded-full"></div>
               <span className="text-[10px] font-bold text-black uppercase tracking-[1px]">
-                New Cairo, Cairo, Egypt
+               Zahraa El Maadi,
+Cairo, Egypt
               </span>
             </div>
             <a 
