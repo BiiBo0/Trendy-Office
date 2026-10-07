@@ -7,26 +7,27 @@ import imgRectangle27 from '../../assets/imgRectangle27.svg';
 
 const AboutHero = () => {
   return (
-    <section className="flex flex-col lg:flex-row items-start overflow-hidden relative w-full font-['Inter'] lg:mt-[-80px]">
+    <section className="flex flex-col lg:flex-row items-start overflow-hidden relative w-full font-['Inter'] ">
 
       {/* الجزء الأيسر: النصوص والأرقام */}
-      <div className="bg-white flex flex-col justify-center h-auto lg:h-[556px] relative w-full lg:w-[45%] z-20 order-1 px-6 md:px-12 lg:pl-[120px] lg:pr-10 pt-6 lg:pt-0 pb-12 lg:pb-0">        
+      {/* التعديل هنا: تم تغيير h-auto lg:h-[556px] إلى min-h-[100vh] */}
+      <div className="bg-white flex flex-col  lg:min-h-[calc(100vh-64px)] relative w-full lg:w-[45%] z-20 order-1 px-6 md:px-12 lg:pl-[80px] lg:pr-10 py-10 lg:py-0 lg:justify-center ">        
         
         {/* كلمة ABOUT US */}
-        <div className="flex items-center justify-start gap-4 mb-6">
-          <span className="font-bold leading-none text-[#444748] text-[13px] tracking-[3.5px] uppercase">
-            About us
+        {/* <div className="mb-[150px] mt-[64px] flex items-center gap-4">
+          <span className="h-[1px] w-10 bg-[#C9362B]" />
+          <span className="text-[11px] uppercase tracking-[0.3em] text-gray-500">
+            About Us
           </span>
-          <div className="bg-[#e2e2e2] h-[1px] w-12 lg:w-16" />
-        </div>
+        </div> */}
 
         {/* العنوان والفقرة والزرار */}
-        <div className="flex flex-col items-start gap-6 w-full lg:max-w-[480px]">
+        <div className="flex flex-col items-start   gap-6 w-full lg:max-w-[480px] ">
           <h2 className="font-bold leading-[1.05] text-[40px] md:text-[50px] lg:text-[64px] text-black tracking-[-1px]">
-            WHO WE <br /> ARE.
+            WHO <span className='text-[#C9362B]'>WE</span> <br /> ARE.
           </h2>
           {/* الفقرة هتاخد عرض الشاشة بالكامل */}
-          <p className="font-light leading-relaxed text-[15px] md:text-[16px] lg:text-base text-[rgba(0,0,0,0.72)] w-full">
+          <p className="font-light leading-relaxed text-[15px] md:text-[16px] lg:text-base text-[rgba(0,0,0,0.72)] w-full ">
             Trendy Office is a specialized company providing integrated solutions in the design, implementation, and supply of doors, partitions, furnishings, and accessories for office and commercial spaces.
           </p>
 
@@ -71,7 +72,8 @@ const AboutHero = () => {
       </div>
 
       {/* الجزء الأيمن: الصورة والنص الجانبي */}
-      <div className="relative h-[350px] md:h-[450px] lg:h-[556px] w-full lg:w-[55%] z-10 order-2 mt-2 lg:mt-0">
+      {/* التعديل هنا: تم تغيير lg:h-[556px] إلى lg:min-h-[100vh] عشان الصورة تساوي الكلام في الشاشات الكبيرة */}
+      <div className="relative h-[350px] md:h-[450px] lg:min-h-[100vh] w-full lg:w-[55%] z-10 order-2 mt-2 lg:mt-0">
 
         {/* التدرج اللوني - مخفي في الموبايل وظاهر في الديسكتوب بس */}
         <div className="hidden lg:block absolute top-0 left-0 w-[150px] h-full bg-gradient-to-r from-white to-transparent z-20 pointer-events-none"></div>

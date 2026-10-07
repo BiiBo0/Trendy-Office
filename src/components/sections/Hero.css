@@ -37,6 +37,11 @@
     z-index: 5;
     pointer-events: none;
 }
+/* @media (max-width: 1000px) and (min-width: 768px) {
+  .hero {
+   object-position: 100% 90%; !important   
+  }
+} */
 
 /* ============================= */
 /* Tablet  (max-width: 1024px)   */

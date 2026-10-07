@@ -13,7 +13,7 @@ import Footer from '../components/layout/Footer';
 const Home = () => {
     return (
         <div className="font-sans text-gray-900 bg-white min-h-screen">
-            <Navbar />
+            
             <Hero />
             <Experience />
             <Products />
@@ -22,7 +22,7 @@ const Home = () => {
             <WhyUs/>
             <Clients/>
             <Contact/>
-            <Footer />
+            
         </div>  
     );
 };
